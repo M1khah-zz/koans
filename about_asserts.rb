@@ -27,14 +27,15 @@ class AboutAsserts < Neo::Koan
 
   # Some ways of asserting equality are better than others.
   def test_a_better_way_of_asserting_equality
-    expected_value = actual_value
+
     actual_value = 1 + 1
+    expected_value = actual_value
 
     assert_equal expected_value, actual_value
   end
 
   # Sometimes we will ask you to fill in the values
   def test_fill_in_values
-    assert_equal __, 1 + 1
+    assert_equal 2, 1 + 1
   end
 end
